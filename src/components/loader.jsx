@@ -144,7 +144,7 @@ const Loader = () => {
           className="text-center font-[PhatBoy] text-2xl text-black"
         />
        </div>
-  <section className="bento-grid w-full flex justify-center items-center px-4 md:px-10 py-8 md:py-16">
+  <section id="games" className="bento-grid w-full flex justify-center items-center px-4 md:px-10 py-8 md:py-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-6xl">
             <div className="col-span-2 row-span-2 rounded-xl overflow-hidden">
               <img src="https://th.bing.com/th/id/OIP.8ld7V0kKlVrPvqvXdGNvZgHaLG?w=204&h=306&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Bento 1" className="w-full h-full object-cover" />

@@ -36,7 +36,7 @@ const demoItems = [
         </div>
       </div>
     </section>
-      <section id="games" className='w-full'>
+      <section  className='w-full'>
         <CurvedLoop 
           marqueeText="Sale ✦ 50% ✦ Sale ✦ 50% ✦ Sale ✦"
           speed={3}
