@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="w-full bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 text-white py-8 mt-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 sm:px-8">
@@ -10,9 +11,9 @@ const Footer = () => {
           <span className="font-[PhatBoy] text-xl sm:text-2xl md:text-3xl tracking-wide text-center md:text-left">PlayStation 5</span>
         </div>
         <nav className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-base sm:text-lg font-semibold w-full md:w-auto items-center justify-center md:justify-end">
-          <Link to="/" className="hover:text-blue-300 transition-colors">Home</Link>
-          <Link to="/earn-more" className="hover:text-blue-300 transition-colors">Learn More</Link>
-          <Link to="/about" className="hover:text-blue-300 transition-colors">About</Link>
+          <button className="hover:text-blue-300 transition-colors bg-transparent border-none cursor-pointer" onClick={() => navigate('/')}>Home</button>
+          <button className="hover:text-blue-300 transition-colors bg-transparent border-none cursor-pointer" onClick={() => navigate('/earn-more')}>Learn More</button>
+          <button className="hover:text-blue-300 transition-colors bg-transparent border-none cursor-pointer" onClick={() => navigate('/about')}>About</button>
         </nav>
       </div>
       <div className="mt-8 text-center text-xs sm:text-sm text-blue-200 px-2">

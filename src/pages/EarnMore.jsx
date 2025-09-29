@@ -3,7 +3,7 @@ import React from 'react';
 const EarnMore = () => {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-100 py-16 px-4">
-      <h1 className="font-[PhatBoy] text-4xl md:text-6xl text-blue-900 mb-6">Earn More</h1>
+      <h1 className="font-[PhatBoy] text-4xl md:text-6xl text-blue-900 mb-6">Learn More</h1>
       <p className="text-lg md:text-2xl text-gray-700 mb-6 max-w-2xl text-center">
         Discover how you can earn more rewards, exclusive content, and special offers with PlayStation 5. Stay tuned for upcoming events and opportunities to maximize your gaming experience!
       </p>
