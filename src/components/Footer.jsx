@@ -11,9 +11,10 @@ const Footer = () => {
           <span className="font-[PhatBoy] text-xl sm:text-2xl md:text-3xl tracking-wide text-center md:text-left">PlayStation 5</span>
         </div>
         <nav className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-base sm:text-lg font-semibold w-full md:w-auto items-center justify-center md:justify-end">
-          <button className="hover:text-blue-300 transition-colors bg-transparent border-none cursor-pointer" onClick={() => navigate('/')}>Home</button>
-          <button className="hover:text-blue-300 transition-colors bg-transparent border-none cursor-pointer" onClick={() => navigate('/earn-more')}>Learn More</button>
-          <button className="hover:text-blue-300 transition-colors bg-transparent border-none cursor-pointer" onClick={() => navigate('/about')}>About</button>
+          <button className="cursor-pointer hover:text-blue-700 transition-colors bg-transparent border-none" onClick={() => document.getElementById('home')?.scrollIntoView({behavior: 'smooth'})}>Home</button>
+          <button className="cursor-pointer hover:text-blue-700 transition-colors bg-transparent border-none" onClick={() => document.getElementById('games')?.scrollIntoView({behavior: 'smooth'})}>Games</button>
+          <button className="cursor-pointer hover:text-blue-700 transition-colors bg-transparent border-none" onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})}>About</button>
+          <button className="cursor-pointer hover:text-blue-700 transition-colors bg-transparent border-none" onClick={() => navigate('/earn-more')}>Learn More</button>
         </nav>
       </div>
       <div className="mt-8 text-center text-xs sm:text-sm text-blue-200 px-2">

@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import TextType from './TextType';
 
 
 const Loader = () => {
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = React.useState(false);
   const counterRef = useRef(null);
 
@@ -97,16 +98,19 @@ const Loader = () => {
       </button>
     </div>
     {menuOpen && (
-      <div className="absolute md:hidden top-16 left-0 w-full bg-white shadow-2xl flex flex-col items-center gap-6 py-8 z-[60] animate-fade-in">
-        <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('home')?.scrollIntoView({behavior: 'smooth'}); }}>Home</button>
-        <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('games')?.scrollIntoView({behavior: 'smooth'}); }}>Games</button>
-        <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('about')?.scrollIntoView({behavior: 'smooth'}); }}>About</button>
-        <a href="/earn-more" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>Learn More</a>
-      </div>
+      <>
+        <div className="fixed inset-0 z-[59]  bg-opacity-10" onClick={() => setMenuOpen(false)}></div>
+        <div className="absolute md:hidden top-16 left-0 w-full bg-white shadow-2xl flex flex-col items-center gap-6 py-8 z-[60] animate-fade-in">
+          <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('home')?.scrollIntoView({behavior: 'smooth'}); }}>Home</button>
+          <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('games')?.scrollIntoView({behavior: 'smooth'}); }}>Games</button>
+          <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('about')?.scrollIntoView({behavior: 'smooth'}); }}>About</button>
+          <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); navigate('/earn-more'); }}>Learn More</button>
+        </div>
+      </>
     )}
   </nav>
         <div className="flex flex-col gap-8 md:gap-16 w-full items-center justify-center mt-24 md:mt-32">
-          <div id="hero" className="header flex flex-col gap-6 md:flex-row px-4 md:px-10 w-full h-auto md:h-100 justify-between pt-10 md:pt-20 md:p-8 leading-none">
+          <div id="hero" className="header flex flex-col gap-6 md:flex-row px-4 md:px-10 w-full h-auto md:h-[100vh] justify-between pt-10 md:pt-20 md:p-8 leading-none">
             <h1 className="font-[PhatBoy] text-4xl md:text-[18rem]">
               Play <span className="text-2xl md:text-[10rem]">incredible</span>
             </h1>
