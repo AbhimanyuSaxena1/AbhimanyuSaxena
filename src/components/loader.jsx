@@ -55,11 +55,11 @@ const Loader = () => {
   <main>
       <h1
         ref={counterRef}
-        className="counter font-[PhatBoy] fixed w-full h-full flex justify-end items-end text-white z-[10] py-8 px-8 text-[20rem]"
+        className="counter font-[PhatBoy] fixed w-full h-full flex justify-end items-end text-white z-[60] py-8 px-8 text-[20rem]"
       >
         0
       </h1>
-      <div className="overlay fixed w-full h-full flex z-[5] pointer-events-none">
+      <div className="overlay fixed w-full h-full top-0 flex z-[50] pointer-events-none">
         <div className="bar w-[10vw] h-full bg-blue-600"></div>
         <div className="bar w-[10vw] h-full bg-blue-600"></div>
         <div className="bar w-[10vw] h-full bg-blue-600"></div>
