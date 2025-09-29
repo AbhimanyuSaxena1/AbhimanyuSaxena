@@ -88,7 +88,7 @@ const Loader = () => {
         <a href="#home" className="cursor-pointer hover:text-blue-700 transition-colors">Home</a>
         <a href="#games" className="cursor-pointer hover:text-blue-700 transition-colors">Games</a>
         <a href="#about" className="cursor-pointer hover:text-blue-700 transition-colors">About</a>
-        <a href="/earn-more" className="cursor-pointer hover:text-blue-700 transition-colors">learn More</a>
+        <a href="/earn-more" className="cursor-pointer hover:text-blue-700 transition-colors">Learn More</a>
       </div>
       <button className="md:hidden flex items-center justify-center p-2 rounded-lg bg-blue-700 hover:bg-blue-900 transition-colors ml-2" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
         <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +101,7 @@ const Loader = () => {
         <a href="#home" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>Home</a>
         <a href="#games" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>Games</a>
         <a href="#about" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>About</a>
-        <a href="/earn-more" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>Earn More</a>
+        <a href="/earn-more" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>Learn More</a>
       </div>
     )}
   </nav>
