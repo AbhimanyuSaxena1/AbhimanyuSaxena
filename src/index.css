@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'PhatBoy';
+  src: url('./fonts/PhatBoy Slim.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PhatBoy';
+  src: url('./fonts/PhatBoy Slim Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PhatBoy';
+  src: url('./fonts/PhatBoy Slim Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PhatBoy';
+  src: url('./fonts/PhatBoy Slim BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+ width: 100%;
+ overflow: hidden;
+} */
