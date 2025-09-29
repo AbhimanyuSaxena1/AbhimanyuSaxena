@@ -55,7 +55,7 @@ const Loader = () => {
   <main>
       <h1
         ref={counterRef}
-        className="counter font-[PhatBoy] fixed w-full h-full flex justify-end items-end text-white z-[60] py-8 px-8 text-[20rem]"
+        className="counter font-[PhatBoy] fixed w-full h-full flex justify-end items-end text-white z-[60] py-20 md:py-8 px-8 text-[7rem] md:text-[20rem]"
       >
         0
       </h1>
@@ -97,10 +97,10 @@ const Loader = () => {
       </button>
     </div>
     {menuOpen && (
-      <div className="absolute top-16 left-0 w-full bg-white shadow-2xl flex flex-col items-center gap-6 py-8 z-[60] animate-fade-in">
-        <a href="#home" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>Home</a>
-        <a href="#games" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>Games</a>
-        <a href="#about" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>About</a>
+      <div className="absolute md:hidden top-16 left-0 w-full bg-white shadow-2xl flex flex-col items-center gap-6 py-8 z-[60] animate-fade-in">
+        <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('home')?.scrollIntoView({behavior: 'smooth'}); }}>Home</button>
+        <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('games')?.scrollIntoView({behavior: 'smooth'}); }}>Games</button>
+        <button className="cursor-pointer hover:text-blue-700 transition-colors text-2xl bg-transparent border-none" onClick={() => { setMenuOpen(false); document.getElementById('about')?.scrollIntoView({behavior: 'smooth'}); }}>About</button>
         <a href="/earn-more" className="cursor-pointer hover:text-blue-700 transition-colors text-2xl" onClick={() => setMenuOpen(false)}>Learn More</a>
       </div>
     )}
