@@ -3,6 +3,7 @@ import Loader from '../components/Loader'
 import Footer from '../components/Footer'
 import CurvedLoop from '../components/CurvedLoop';
         import FlowingMenu from '../components/FlowingMenu'
+import { Link } from 'react-router-dom';
 
 function Home() {
     
@@ -29,7 +30,7 @@ const demoItems = [
             <li>DualSense wireless controller with haptic feedback</li>
             <li>Exclusive games and PlayStation Studios titles</li>
           </ul>
-          <a href="/earn-more" className="inline-block mt-4 px-6 py-3 bg-blue-700 text-white rounded-full font-bold shadow-lg hover:bg-blue-900 transition-colors">Learn More</a>
+          <Link to="/earn-more" className="inline-block pointer-none cursor-pointer mt-4 px-6 py-3 bg-blue-700 text-white rounded-full font-bold shadow-lg hover:bg-blue-900 transition-colors">Learn More</Link>
         </div>
         <div className="md:w-1/2 w-full flex items-center justify-center">
           <img src="https://www.bing.com/th/id/OIP.zvlPVs9P6x95zDChZk-kMAHaFj?w=254&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="PS5 Console" className="w-full max-w-md rounded-xl shadow-xl object-contain" />
